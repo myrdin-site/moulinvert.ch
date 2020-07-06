@@ -32,6 +32,9 @@ Temporary Items
 *.sass.map
 *.scss.map
 
+# ---> CSS
+assets/css/
+
 # ---> Vim 
 # Swap
 [._]*.s[a-v][a-z]
