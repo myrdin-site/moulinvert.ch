@@ -43,3 +43,11 @@ body {
 .button-submit:hover {
     background-color: $light-blue;
 }
+
+// Map
+
+#map {
+    overflow: scroll;
+    height: 400px;
+}
+
