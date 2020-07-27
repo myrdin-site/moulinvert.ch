@@ -12,10 +12,21 @@ h6 {
 body {
     font-family: $text;
 }
+// Emphasis
 
 .shadow {
     box-shadow: inset 0 -6px 0 rgba(114, 191, 77, 0.6);
     font-weight: normal;
+}
+
+// Links
+
+a {
+    color: $green;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 // Second Section
