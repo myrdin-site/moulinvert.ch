@@ -16,6 +16,7 @@ jobs:
             ref: dev
             fetch-depth: 0
             submodules: true
+            persist-credentials: false
 
       - name: Make destination directory for compiled CSS
         run: mkdir -vp assets/css
@@ -26,16 +27,9 @@ jobs:
           source: assets/sass/styles.scss
           destination: assets/css/styles.css
 
-      - name: Add and Commit changes to gh-pages branch
-        run: |
-          git config --local user.email 'action@github.com'
-          git config --local user.name 'GitHub Action'
-          git add -f assets/css/*
-          git commit -m 'Updates compiled CSS files'
-
-      - name: Push changes
-        uses: ad-m/github-push-action@master
+      uses: JamesIves/github-pages-deploy-action@3.7.1
         with:
-          branch: gh-pages
-          force: true
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: .
+          SILENT: true
