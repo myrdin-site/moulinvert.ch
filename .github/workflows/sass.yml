@@ -1,4 +1,4 @@
-name: Sass
+name: Build Sass & deploy
 
 on:
   push:
@@ -18,7 +18,7 @@ jobs:
             submodules: true
             persist-credentials: false
 
-      - name: Make destination directory for compiled CSS
+      - name: Create destination directory
         run: mkdir -vp assets/css
 
       - name: Compile CSS from SCSS files
