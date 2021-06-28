@@ -54,17 +54,25 @@
           class="rounded-lg container mx-auto grid grid-cols-1 md:grid-cols-2 m-8 shadow-2xl"
         >
           <div class="flex items-center flex-wrap justify-center">
-            <img
-              src="assets/img/logo.webp"
-              alt="Logo du magasin"
-              class="w-2/4"
-            />
+	  <picture>
+	      <source type="image/avif" srcset="logo.avif" />
+	      <source type="image/webp" srcset="logo.webp" />
+		<img
+		  src="assets/img/logo.jpg"
+		  alt="Logo du magasin"
+		  class="w-2/4"
+		/>
+	    </picture>
           </div>
-          <img
-            src="assets/img/devanture-square.webp"
-            alt="Photo du moulin vert"
-            class="h-auto"
-          />
+	  <picture>
+	      <source type="image/avif" srcset="devanture-square.avif" />
+	      <source type="image/webp" srcset="devanture-square.webp" />
+	      <img
+		src="assets/img/devanture-square.jpg"
+		alt="Photo du moulin vert"
+		class="h-auto"
+	      />
+	  </picture>
         </div>
         <div class="container mx-auto">
           <h1 class="text-center text-xl">
@@ -145,23 +153,37 @@
       <div class="container mx-auto">
         <div class="grid grid-cols-1 gap-3 md:grid-cols-2">
           <div>
-            <img
-              class="h-full w-full object-cover rounded-lg"
-              src="assets/img/etale.webp"
-              alt="Étale de l'épicerie avec divers produits cosmétiques bio"
-            />
+	    <picture>
+	      <source type="image/avif" srcset="etale.avif" />
+	      <source type="image/webp" srcset="etale.webp" />
+
+		<img
+		  class="h-full w-full object-cover rounded-lg"
+		  src="assets/img/etale.jpg"
+		  alt="Étale de l'épicerie avec divers produits cosmétiques bio"
+		/>
+	    </picture>
           </div>
           <div>
+	  <picture>
+	      <source type="image/avif" srcset="pots.avif" />
+	      <source type="image/webp" srcset="pots.webp" />
             <img
               class="rounded-lg"
-              src="assets/img/pots.webp"
+              src="assets/img/pots.jpg"
               alt="Pots de fruits secs"
             />
+	 </picture>
+	 <picture>
+	      <source type="image/avif" srcset="interieur.avif" />
+	      <source type="image/webp" srcset="interieur.webp" />
+
             <img
               class="rounded-lg mt-3"
-              src="assets/img/interieur.webp"
+              src="assets/img/interieur.jpg"
               alt="Intérieur du magasin avec une étale de produits bio, des légumes au premier plan"
             />
+	</picture>
           </div>
         </div>
       </div>
