@@ -1,3 +1,9 @@
-# lemoulinvert.ch
+# moulinvert.ch
 
-Site internet static "landing page" pour l'épicerie du Moulin Vert.
+Site internet static "landing page" pour le magasin bio Moulin Vert.
+
+## Inclus
+- Tailwind CSS
+- Sass
+- Openstreetmap
+- Formspree
