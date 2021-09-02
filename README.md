@@ -13,5 +13,5 @@ Invoque `npm install` dans le répertoire du projet pour télécharger l'ensembl
 ## Compilation CSS
 Lance `npm run build` pour compiler les fichiers CSS depuis Sass.
 
-## Purge CSS
-Lance `npm run clean` pour nettoyer les fichiers CSS des entrées inutiles.
+## Optimiser avant production
+Change la valeur de `purge` à `true` dans `tailwind.config.js` et relance `npm run build` pour purger les classes CSS inutilisées de la feuille de style principale.
