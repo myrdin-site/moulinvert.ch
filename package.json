@@ -4,7 +4,7 @@
   "description": "Moulin Vert's landing page",
   "main": "index.html",
   "scripts": {
-    "build": "postcss assets/tailwind/tailwind.css -o assets/css/styles.css"
+    "build": "postcss assets/tailwind/tailwind.min.css -o assets/css/styles.css"
   },
   "keywords": [],
   "author": "Clic2000",
