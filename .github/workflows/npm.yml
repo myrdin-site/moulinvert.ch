@@ -30,4 +30,3 @@ jobs:
           BRANCH: gh-pages
           FOLDER: .
           SILENT: true
-          
