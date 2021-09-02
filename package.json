@@ -4,14 +4,12 @@
   "description": "Moulin Vert's landing page",
   "main": "index.html",
   "scripts": {
-    "build": "sass assets/sass/styles.scss assets/css/styles.css",
-    "clean": "postcss assets/tailwind/tailwind.min.css -o assets/css/styles.css"
+    "build": "postcss assets/css/tailwind.css -o assets/css/styles.css"
   },
   "keywords": [],
   "author": "Clic2000",
   "license": "CNPLv5",
   "dependencies": {
-    "sass": "^1.39.0",
     "@tailwindcss/aspect-ratio": "^0.2.1",
     "autoprefixer": "^10.2.6",
     "postcss-cli": "^8.3.1",
