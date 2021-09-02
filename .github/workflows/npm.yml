@@ -1,4 +1,4 @@
-name: Build Sass & deploy
+name: Install dependencies & deploy
 
 on:
   push:
@@ -18,14 +18,11 @@ jobs:
             submodules: true
             persist-credentials: false
 
-      - name: Create destination directory
-        run: mkdir -vp assets/css
+      - name: Install dependencies
+        run: npm install
 
-      - name: Compile CSS from SCSS files
-        uses: gha-utilities/sass-build@v0.3.9
-        with:
-          source: assets/sass/styles.scss
-          destination: assets/css/styles.css
+      - name: Compile CSS
+        run: npm run build
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.3
