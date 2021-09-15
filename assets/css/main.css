@@ -1,13 +1,23 @@
-// Fonts
+/* Fonts */
+
+@font-face {
+    font-family: 'MuktaVaani';
+    src: url('../font/MuktaVaani-ExtraLight.ttf');
+}
+
+@font-face {
+    font-family: 'HindMadurai';
+    src: url('../font/HindMadurai-Regular.ttf');
+}
 
 html {
     scroll-behavior: smooth;
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-	html {
-		scroll-behavior: auto;
-	}
+    html {
+        scroll-behavior: auto;
+    }
 }
 
 h1,
@@ -16,59 +26,47 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: $title;
+    font-family: MuktaVaani;
 }
 
 body {
-    font-family: $text;
+    font-family: HindMadurai;
 }
-// Emphasis
 
 .shadow {
     box-shadow: inset 0 -6px 0 rgba(114, 191, 77, 0.6);
     font-weight: normal;
 }
 
-// Links
-
 a {
-    color: $green;
+    color: #72BF4D;
 }
 
 a:hover {
     text-decoration: underline;
 }
 
-// Second Section
-
 .bg-apricot {
-    background-color: $moulin;
+    background-color: #B7E464;
     margin-top: -2px;
     margin-bottom: -2px;
 }
-
-// Fourth Section
 
 .bg-blue {
-    background-color: $moulin;
+    background-color: #B7E464;
     margin-top: -2px;
     margin-bottom: -2px;
 }
 
-// Fifth Section
-
 .bg-green {
-    background-color: $green;
+    background-color: #72BF4D;
 }
 
 .button-submit:hover {
-    background-color: $moulin-light;
+    background-color: #C6DEAB;
 }
-
-// Map
 
 #map {
     overflow: scroll;
     height: 400px;
 }
-
