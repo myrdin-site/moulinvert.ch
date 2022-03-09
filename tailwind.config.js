@@ -1,5 +1,5 @@
 module.exports = {
-  purge: {
+  content: {
       enabled: false, // change at true for production
       content: ['*.html'],
     },
