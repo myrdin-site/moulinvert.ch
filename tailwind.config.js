@@ -2,7 +2,6 @@ module.exports = {
   content: [
       '*.html',
     ],
-  media: false, // or 'media' or 'class'
   theme: {
     extend: {},
   },
