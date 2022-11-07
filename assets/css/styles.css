@@ -644,6 +644,10 @@ video {
 .rounded {
   border-radius: 0.25rem;
 }
+.rounded-r-lg {
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
 .border {
   border-width: 1px;
 }
