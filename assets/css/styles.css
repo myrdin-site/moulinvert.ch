@@ -882,8 +882,8 @@ video {
     z-index: 10;
   }
 
-  .lg\:mt-4 {
-    margin-top: 1rem;
+  .lg\:mt-10 {
+    margin-top: 2.5rem;
   }
 
   .lg\:ml-60 {
